@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Array unshift and shift</title>
+</head>
+<body>
+	<h1>First In First Out stack (FIFO stack)</h1>
+	<script>
+		var days = ['wednesday'];
+		document.write('<b>Array:</b> ' + days + '<br>');
+		alert(days.unshift('monday', 'tuesday'));
+		document.write('<b>Array Unsift (monday, tuesday):</b> ' + days + '<br>');
+		alert(days.shift('monday'));
+		document.write('<b>Array Sift (monday):</b> ' + days + '<br>');
+		alert(days.shift('tuesday'));
+		document.write('<b>Array Sift (tuesday):</b> ' + days + '<br>');
+	</script>
+</body>
+</html>

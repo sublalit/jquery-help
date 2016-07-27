@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>versatile splice() method</title>
+  </head>
+  <body>
+    <h1>A versatile splice() method</h1>
+    <script>
+      var letters = ['a','b','c','d','e','f','g','h','i','j','k']
+      document.write('total letters length ' + letters.length + '<br>');
+      document.write('Total letters ' + letters + '<br>');
+      document.write('delete letters ' + letters.splice(5, 2));
+      document.write('<br>  Now Total letters ' + letters + '<br>');
+      document.write('more letters delete ' + letters.splice(2, 2));
+      document.write('<br>  Now Total letters ' + letters + '<br>');
+
+    </script>
+  </body>
+</html>

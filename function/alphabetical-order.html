@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alphabetical order</title>
+</head>
+<body>
+	<h1>Alphabetical order</h1>
+	<input type="text" id="valueOne">
+	<button type="button" onClick="alphabeticalFunction()">Alphabetical Order</button>
+	<button type="button" onClick="alphabeticalDescendingOrderFunction()">alphabetical Descending Order</button>
+
+	<h2 id="resultDiv"></h2>
+
+	<script>
+		var str=document.getElementById("valueOne").value;
+		function alphabeticalOrder(){
+			var res  = str.split('').sort().join('');
+			return res;
+		}
+
+		function alphabeticalDescendingOrder(){
+			var res  = str.split('').sort().reverse().join('');
+			return res;
+		}
+
+		function alphabeticalFunction(){
+			var result=alphabeticalOrder(str);
+			document.getElementById('resultDiv').innerHTML=result;
+		}
+
+		function alphabeticalDescendingOrderFunction(){
+			var result=alphabeticalDescendingOrder(str);
+			document.getElementById('resultDiv').innerHTML=result;
+		}
+
+	</script>
+</body>
+</html>

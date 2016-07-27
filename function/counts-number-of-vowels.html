@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Counts the number of vowels within the string</title>
+</head>
+<body>
+	<h1>Counts the number of vowels within the string</h1>
+
+	<input type="text" id="valueOne">
+	<button type="button" onClick="inputHandle()">counts vowels</button>
+
+	<h2 id="resultDiv"></h2>
+
+	<script>
+		function findVowel(str){
+			var vowelList='aeiouAEIOU';
+			var vCount=0;
+			for(x=1;x<str.length;x++){
+				if(vowelList.indexOf(str[x]) !== -1){
+					vCount += 1;
+				}
+			}
+
+			return vCount
+		}
+
+		function inputHandle(){
+			var textInput=document.getElementById('valueOne').value;
+			var result=findVowel(textInput);
+			document.getElementById('resultDiv').innerHTML='Vowel number in this string <h1>"' + result + '"</h1>'
+		}
+	</script>
+</body>
+</html>

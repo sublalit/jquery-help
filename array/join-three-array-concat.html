@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Join Three and more Array with concat()</title>
+</head>
+<body>
+	<h1>Join Three Array concat()</h1>
+	
+	<div id="shopOneItemsArr"></div>
+	<div id="shopTwoItemsArr"></div>
+	<div id="shopThreeItemsArr"></div>
+	<button type="family" onClick="totalShoppingItemslist()">Click here for Total Shopping Items List</button>
+	<div id="result"></div>
+	<script>
+		var shopOneItemsArr = ['Mobile', 'Changer', 'New Sim'];
+		var shopTwoItemsArr = ['Shirt', 'Cap'];
+		var shopThreeItemsArr = ['Cake', 'Cold Drink']
+
+		document.getElementById('shopOneItemsArr').innerHTML='<b>Shop 1 Items</b>' + shopOneItemsArr;
+		document.getElementById('shopTwoItemsArr').innerHTML='<b>Shop 2 Items</b>' + shopTwoItemsArr;
+		document.getElementById('shopThreeItemsArr').innerHTML='<b>Shop 2 Items</b>' + shopThreeItemsArr;
+
+		function totalShoppingItemslist(){
+			var totalShoppingitem = shopOneItemsArr.concat(shopTwoItemsArr,shopThreeItemsArr);
+			document.getElementById('result').innerHTML=totalShoppingitem;
+		}
+	</script>
+</body>
+</html>

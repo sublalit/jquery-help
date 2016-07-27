@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Lowercase to Upercase function</title>
+    
+  </head>
+  <body>
+    <input type="text" name="" id="textInput">
+    <button type="button" onClick="convertTextFunction()">Click for uppercase</button>
+    <div id="resultDiv"></div>
+
+    <script>
+    function convertTextFunction(){
+      var textValue=(document.getElementById('textInput').value).toUpperCase();
+      //var result=textValue.toUpperCase();
+      document.getElementById('resultDiv').innerHTML=textValue;
+    }
+    </script>
+  </body>
+</html>

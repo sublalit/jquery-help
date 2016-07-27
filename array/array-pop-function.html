@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Join Array</title>
+</head>
+<body>
+	<h1>Array Pop():: Delete last Element Function</h1>
+	<button type="button" onClick="arrPop()">Click</button>
+	<div id="result"></div>
+	<script>
+		var days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+		document.getElementById('result').innerHTML=days
+		function arrPop(){
+			days.pop();
+			document.getElementById('result').innerHTML=days
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculate multiplication and division</title>
+</head>
+<body>
+	<h1>Calculate multiplication and division</h1>
+
+	<form>
+		<div>
+			<label for="firstNumber">1st Number</label>
+			<input type="text" name="firstNumber" id="firstNumber">
+		</div>
+
+		<div>
+			<label for="secondNumber">2st Number</label>
+			<input type="text" name="secondNumber" id="secondNumber">
+		</div>
+
+		<div>
+			<input type="button" value="multiply" id="multiply" onClick="multiplyBy()">
+			<input type="button" value="divide" id="divide" onClick="divideBy()">
+		</div>
+
+		
+	</form>
+
+	<div id="resultDiv">
+			
+		</div>
+
+	<script>
+		function multiplyBy(){
+			var valOne=document.getElementById('firstNumber').value;
+			var valTwo=document.getElementById('secondNumber').value;
+			var result=valOne*valTwo;
+			document.getElementById('resultDiv').innerHTML=result;
+		}
+
+		function divideBy(){
+			var valOne=document.getElementById('firstNumber').value;
+			var valTwo=document.getElementById('secondNumber').value;
+			var result=valOne/valTwo;
+			document.getElementById('resultDiv').innerHTML=result;
+		}
+	</script>
+</body>
+</html>

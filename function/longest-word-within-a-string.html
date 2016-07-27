@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Longest word within the string</title>
+</head>
+<body>
+	<h1>Longest word within the string</h1>
+
+	<input type="text" id="valueOne">
+	<button type="button" onClick="inputHandle()">Logest Word</button>
+
+	<h2 id="resultDiv"></h2>
+
+	<script>
+	function logestWord(str){
+		var arr=str.split(' ');
+		var result=arr[0];
+
+		for(x=1;x<arr.length;x++){
+			if(result.length<arr[x].length){
+				result=arr[x];
+			}
+		}
+		return result;
+	}
+
+	function inputHandle(){
+		var textInput=document.getElementById('valueOne').value;
+		var result=logestWord(textInput);
+		document.getElementById('resultDiv').innerHTML='<h1>"' + result + '"</h1> Lostgest word of this string';
+	}
+		
+
+
+
+		
+		
+	</script>
+</body>
+</html>

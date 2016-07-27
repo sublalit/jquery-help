@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Array 1</title>
+  </head>
+  <body>
+    <script>
+      var car = [];
+      car[1]="Ford";
+      car[3]="BMW";
+      car["six"]="Honda"
+      for (i=0;i<car.length;i++){
+        document.write(car[i] + '<br>')
+      }
+
+      for (i=0;i<car.length;i++){
+        if (car[i]==undefined)
+          continue
+          document.write('<h2>' + car[i] + '</h2>')
+      }
+    </script>
+  </body>
+</html>

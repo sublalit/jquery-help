@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Array unshift and shift</title>
+</head>
+<body>
+	<h1>Join Two Array concat()</h1>
+	
+	<div id="myGirls"></div>
+	<div id="myBoys"></div>
+	<button type="family" onClick="family()">Click here for my Girls and Boys</button>
+	<div id="result"></div>
+	<script>
+		var myGirls = ["Cecilie", " Lone"];
+		var myBoys = [" Emil", " Tobias", " Linus"];
+
+		document.getElementById('myGirls').innerHTML = '<b>Girls:</b> ' + myGirls;
+		document.getElementById('myBoys').innerHTML = '<b>Boys:</b> ' + myBoys
+
+		function family(){
+			var myChildren = myGirls.concat(myBoys)
+			document.getElementById('result').innerHTML = myChildren
+		}
+	</script>
+</body>
+</html>

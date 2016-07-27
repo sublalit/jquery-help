@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Toggle and Search</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+    <!-- middle part -->
+    <div class="middle-part">
+        <div class="container">
+            <!-- row -->
+            <div class="row inner-pages margin-top-30">
+                <div class="col-md-12 search-sitemap">
+                    <!-- sitemap search -->
+                    <form action="" onsubmit="return false;">
+                        <input type="text" name="search-field" id="search-field" class="search-field" placeholder="Sitemap Search">
+                        <input type="button" id="submit" value="Search" onClick="searchFunction()" class="search-btn">
+                    </form>
+                    <!-- /sitemap search -->
+                </div>
+            </div>
+            <!-- /row -->
+
+
+            <!-- row -->
+            <div class="row inner-pages margin-top-30">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="javascript:void(0);" class="toggalAll">Expand All</a>
+                    </div>
+                </div>
+
+                <div class="row notFound">
+                    <div class="col-md-12">
+                        <h2>Content not found</h2>
+                    </div>
+                </div>
+                
+                <div class="row seven-cols">
+                    <div class="col-md-1 col-xs-12">
+                        <div class="sitemap-list-col">
+                            <h5>Departments</h5>
+                            <ul class="sitemap-list">
+                                <li><a href="javascript:void(0);">Departments 1</a></li>
+                                <li><a href="javascript:void(0);">Departments 2</a></li>
+                                <li><a href="javascript:void(0);">Departments 3</a></li>
+                                <li><a href="javascript:void(0);">Departments 4</a></li>
+                                <li><a href="javascript:void(0);" class="toggle">Departments 5</a>
+                                    <ul>
+                                        <li><a href="javascript:void(0);">Departments 5a</a></li>
+                                        <li><a href="javascript:void(0);">Departments 5b</a></li>
+                                        <li><a href="javascript:void(0);">Departments 5c</a>
+                                            <ul>
+                                                <li><a href="javascript:void(0);">Departments 5c-1</a></li>
+                                                <li><a href="javascript:void(0);">Departments 5c-2</a></li>
+                                                <li><a href="javascript:void(0);">Departments 5c-3</a></li>
+                                                <li><a href="javascript:void(0);">Departments 5c-4</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:void(0);">Departments 6</a></li>
+                                <li><a href="javascript:void(0);">Departments 7</a></li>
+                                <li><a href="javascript:void(0);">Departments 8</a></li>
+                                <li><a href="javascript:void(0);">Departments 9</a></li>
+                                <li><a href="javascript:void(0);">Departments 10</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-1 col-xs-12">
+                        <div class="sitemap-list-col">
+                            <h5>Communities</h5>
+                            <ul class="sitemap-list">
+                                <li><a  href="javascript:void(0);">Communities 1</a>
+                                     <ul class="first">
+                                        <li><a href="javascript:void(0);">Communities 2a</a></li>
+                                        <li><a href="javascript:void(0);">Communities 2b</a></li>
+                                        <li><a href="javascript:void(0);">Communities 2c</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:void(0);">Communities 2</a>
+                                    <ul class="second">
+                                        <li><a href="javascript:void(0);">Communities 2a</a></li>
+                                        <li><a href="javascript:void(0);">Communities 2b</a></li>
+                                        <li><a href="javascript:void(0);">Communities 2c</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:void(0);">Communities 3</a></li>
+                                <li><a href="javascript:void(0);">Communities 4</a></li>
+                                <li><a href="javascript:void(0);">Communities 5</a></li>
+                                <li><a href="javascript:void(0);">Communities 6</a></li>
+                                <li><a href="javascript:void(0);">Communities 7</a></li>
+                                <li><a href="javascript:void(0);">Communities 8</a></li>
+                                <li><a href="javascript:void(0);">Communities 9</a></li>
+                                <li><a href="javascript:void(0);">Communities 10</a></li>
+                                <li><a href="javascript:void(0);">Communities 11</a></li>
+                                <li><a href="javascript:void(0);">Communities 12</a></li>
+                                <li><a href="javascript:void(0);">Communities 13</a></li>
+                                <li><a href="javascript:void(0);">Communities 14</a></li>
+                                <li><a href="javascript:void(0);">Communities 15</a></li>
+                                <li><a href="javascript:void(0);">Communities 16</a></li>
+                                <li><a href="javascript:void(0);">Communities 17</a></li>
+                                <li><a href="javascript:void(0);">Communities 18</a></li>
+                                <li><a href="javascript:void(0);">Communities 19</a></li>
+                                <li><a href="javascript:void(0);">Communities 20</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-1 col-xs-12">
+                        <div class="sitemap-list-col">
+                            <h5>Ethics</h5>
+                            <ul class="sitemap-list">
+                                <li><a href="javascript:void(0);">Ethics 1</a></li>
+                                <li><a href="javascript:void(0);">Ethics 2</a></li>
+                                <li><a href="javascript:void(0);">Ethics 3</a></li>
+                                <li><a href="javascript:void(0);">Ethics 4</a></li>
+                                <li><a href="javascript:void(0);">Ethics 5</a></li>
+                                <li><a href="javascript:void(0);">Ethics 6</a></li>
+                                <li><a href="javascript:void(0);">Ethics 7</a>
+                                    <ul>
+                                        <li><a href="javascript:void(0);">Ethics 7a</a></li>
+                                        <li><a href="javascript:void(0);">Ethics 7b</a></li>
+                                        <li><a href="javascript:void(0);">Ethics 7c</a>
+                                            <ul>
+                                                <li><a href="javascript:void(0);">Ethics 7c-1</a></li>
+                                                <li><a href="javascript:void(0);">Ethics 7c-2</a></li>
+                                                <li><a href="javascript:void(0);">Ethics 7c-3</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:void(0);">Ethics 8</a></li>
+                                <li><a href="javascript:void(0);">Ethics 9</a></li>
+                                <li><a href="javascript:void(0);">Ethics 10</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-1 col-xs-12">
+                        <div class="sitemap-list-col">
+                            <h5>Policies</h5>
+                            <ul class="sitemap-list">
+                                <li><a href="javascript:void(0);">Policies 1</a></li>
+                                <li><a href="javascript:void(0);">Policies 2</a></li>
+                                <li><a href="javascript:void(0);">Policies 3</a></li>
+                                <li><a href="javascript:void(0);">Departments 4</a>
+                                    <ul>
+                                        <li><a href="javascript:void(0);">Policies 4a</a></li>
+                                        <li><a href="javascript:void(0);">Policies 4b</a></li>
+                                        <li><a href="javascript:void(0);">Policies 4c</a></li>
+                                        <li><a href="javascript:void(0);">Policies 4d</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:void(0);">Policies 5</a></li>
+                                <li><a href="javascript:void(0);">Policies 6</a></li>
+                                <li><a href="javascript:void(0);">Policies 7</a></li>
+                                <li><a href="javascript:void(0);">Policies 8</a></li>
+                                <li><a href="javascript:void(0);">Policies 9</a></li>
+                                <li><a href="javascript:void(0);">Policies 10</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-1 col-xs-12">
+                        <div class="sitemap-list-col">
+                            <h5>Project</h5>
+                            <ul class="sitemap-list">
+                                <li><a href="javascript:void(0);">Project 1</a></li>
+                                <li><a href="javascript:void(0);">Project 2</a></li>
+                                <li><a href="javascript:void(0);">Project 3</a></li>
+                                <li><a href="javascript:void(0);">Project 4</a></li>
+                                <li><a href="javascript:void(0);">Project 5</a></li>
+                                <li><a href="javascript:void(0);">Project 6</a></li>
+                                <li><a href="javascript:void(0);">Project 7</a></li>
+                                <li><a href="javascript:void(0);">Project 8</a></li>
+                                <li><a href="javascript:void(0);">Project 9</a></li>
+                                <li><a href="javascript:void(0);">Project 10</a>
+                                    <ul>
+                                        <li><a href="javascript:void(0);">Project 10a</a></li>
+                                        <li><a href="javascript:void(0);">Project 10b</a></li>
+                                        <li><a href="javascript:void(0);">Project 10c</a></li>
+                                        <li><a href="javascript:void(0);">Project 10d</a></li>
+                                        <li><a href="javascript:void(0);">Project 10e</a></li>
+                                        <li><a href="javascript:void(0);">Project 10f</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-1 col-xs-12">
+                        <div class="sitemap-list-col">
+                            <h5>Traning</h5>
+                            <ul class="sitemap-list">
+                                <li><a href="javascript:void(0);">Traning 1</a></li>
+                                <li><a href="javascript:void(0);">Traning 2</a>
+                                    <ul>
+                                        <li><a href="javascript:void(0);">Traning 2a</a></li>
+                                        <li><a href="javascript:void(0);">Traning 2b</a></li>
+                                        <li><a href="javascript:void(0);">Traning 2c</a></li>
+                                        <li><a href="javascript:void(0);">Traning 2d</a></li>
+                                        <li><a href="javascript:void(0);">Traning 2e</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:void(0);">Traning 3</a></li>
+                                <li><a href="javascript:void(0);">Traning 4</a></li>
+                                <li><a href="javascript:void(0);">Traning 5</a></li>
+                                <li><a href="javascript:void(0);">Traning 6</a></li>
+                                <li><a href="javascript:void(0);">Traning 7</a></li>
+                                <li><a href="javascript:void(0);">Traning 8</a></li>
+                                <li><a href="javascript:void(0);">Traning 9</a></li>
+                                <li><a href="javascript:void(0);">Traning 10</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-1 col-xs-12">
+                        <div class="sitemap-list-col">
+                            <h5>Location</h5>
+                            <ul class="sitemap-list">
+                                <li><a href="javascript:void(0);">Location 1</a></li>
+                                <li><a href="javascript:void(0);">Location 2</a></li>
+                                <li><a href="javascript:void(0);">Location 3</a></li>
+                                <li><a href="javascript:void(0);">Location 4</a>
+                                    <ul>
+                                        <li><a href="javascript:void(0);">Location 8a</a>
+                                            <ul>
+                                                <li><a href="javascript:void(0);">Location 8a-1</a></li>
+                                                <li><a href="javascript:void(0);">Location 8a-2</a></li>
+                                                <li><a href="javascript:void(0);">Location 8a-3</a></li>
+                                                <li><a href="javascript:void(0);">Location 8a-4</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="javascript:void(0);">Location 8b</a></li>
+                                        <li><a href="javascript:void(0);">Location 8c</a></li>
+                                        <li><a href="javascript:void(0);">Location 8d</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:void(0);">Location 5</a></li>
+                                <li><a href="javascript:void(0);">Location 6</a></li>
+                                <li><a href="javascript:void(0);">Location 7</a></li>
+                                <li><a href="javascript:void(0);">Location 8</a></li>
+                                <li><a href="javascript:void(0);">Location 9</a></li>
+                                <li><a href="javascript:void(0);">Location 10</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <!-- /row -->
+              
+        </div>
+    </div>
+    <!-- /middle part -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

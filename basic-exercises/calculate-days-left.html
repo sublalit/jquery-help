@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculate days left</title>
+</head>
+<body>
+	<h1>Calculate days left</h1>
+
+	<script>
+		// var today=new Date(); //Find Date
+		// var cmas=new Date(today.getFullYear(), 11, 25); //Set date for Christmas
+		// if(today.getMonth()==11 && today.getDate()>25){ //if month is equal Dec(12) to and date is gretter then 25th Dec
+		// 	cmas.setFullYear(cmas.getFullYear()+1)//current year + 1
+		// }
+		// var oneDay=1000*60*60*24;
+		// document.write(Math.ceil((cmas.getTime()-today.getTime())/oneDay) + " days left until Christmas!");
+
+		var today=new Date();
+		var cmas=new Date(today.getFullYear(),11,25);
+		if(today.getMonth()==11 && today.getDate()>25){
+			cmas.setFullYear(cmas.getFullYear()+1);
+		}
+		var oneDay=1000*60*60*24;
+		document.write('<b>' + Math.ceil((cmas.getTime()-today.getTime())/oneDay) + " </b>days left until Christmas!")
+	</script>
+</body>
+</html>

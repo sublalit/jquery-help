@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Sort by function</title>
+    <script src="lodash.min.js"></script>
+  </head>
+  <body onLoad='sortByArray()'>
+    <button onclick="">click</button>
+    <script>
+    function sortByArray(){
+      var users = [3,55,76,856,5,5,5,5,5,7867,765];  
+      
+      sort=_.sortBy(users)
+      document.write(sort);
+    }
+
+    </script>
+  </body>
+</html>

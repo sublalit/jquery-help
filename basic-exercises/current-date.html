@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Current date :: Output mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy</title>
+</head>
+<body>
+	<h1>Current date</h1>
+	<h3>Expected Output : Output mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy</h3>
+
+	<script>
+		var today = new Date();
+		var month = today.getMonth()+1;
+		var date = today.getDate();
+		var year = today.getFullYear();
+
+	if(date<=9){
+        date='0'+date
+    } 
+    if(month<=9){
+        month='0'+month
+    } 
+
+		document.write(month + '-' + date + '-' + year);
+	</script>
+</body>
+</html>
